@@ -1,0 +1,126 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.myForm{
+    margin:20px auto;
+    display:block;
+}
+
+.leftHalf{
+    width:49%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.rightHalf{
+    width:49%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.myInput{
+    margin:5px 0;
+}
+
+.myInput label{
+    width:150px;
+}
+p.error{
+    display:inline;
+    color:red;
+    font-style:italic;
+}
+p.shift{
+    margin:10px 0;
+}
+.myInput p{
+    display:inline;
+    font-weight: bold;
+}
+
+.myInput span{
+    color:red;
+    font-style:italic;
+}
+
+#weddingTable{
+    border-collapse: collapse;
+    
+}
+#weddingTable td, #weddingTable th{
+    border: 1px solid #ddd;
+    padding:8px;
+}
+#weddingTable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#weddingTable tr:hover{
+    background-color: #ddd;
+}
+#weddingTable th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\bin\Debug\netcoreapp2.0\WeddingPlanner.deps.json
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\bin\Debug\netcoreapp2.0\WeddingPlanner.runtimeconfig.json
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\bin\Debug\netcoreapp2.0\WeddingPlanner.runtimeconfig.dev.json
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\bin\Debug\netcoreapp2.0\WeddingPlanner.dll
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\bin\Debug\netcoreapp2.0\WeddingPlanner.pdb
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\obj\Debug\netcoreapp2.0\WeddingPlanner.csproj.CoreCompileInputs.cache
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\obj\Debug\netcoreapp2.0\WeddingPlanner.AssemblyInfoInputs.cache
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\obj\Debug\netcoreapp2.0\WeddingPlanner.AssemblyInfo.cs
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\obj\Debug\netcoreapp2.0\WeddingPlanner.dll
+C:\Users\Jeremy\source\repos\C#\ASP\WeddingPlanner\obj\Debug\netcoreapp2.0\WeddingPlanner.pdb

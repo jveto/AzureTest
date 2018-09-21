@@ -1,0 +1,49 @@
+<div class="container">
+    @{
+        <table id="weddingTable">
+            <tr>
+                <th>Wedding</th>
+                <th>Date</th>
+                <th>Guest</th>
+                <th>Action</th>
+            </tr>
+            @foreach(var wedding in ViewBag.Weddings){
+                <tr>
+                    <td>@wedding.WedderOne & @wedding.WedderTwo</td>
+                    <td>@wedding.Date.ToString("MMM dd yyyy")</td>
+                    <td>@wedding.Guests.Count</td>
+                    <td>@{
+                            if(ViewBag.User.UserId == wedding.Creator.UserId){
+                                <form action="Delete" method="POST">
+                                    <input type="submit" value="Delete">
+                                    <input type="hidden" value=@wedding.WeddingId name="Id">
+                                </form>
+                            }
+                            else{
+                                bool found = false;
+                                foreach(var num in ViewBag.Attending){
+                                    if(num == wedding.WeddingId){
+                                        <form action="UnRSVP" method="POST">
+                                            <input type="submit" value="Un-RSVP">
+                                            <input type="hidden" value=@wedding.WeddingId name="Id">
+                                        </form>
+                                        found = true;
+                                        break;
+                                    }
+                                }
+                                if(found != true){
+                                    <form action="RSVP" method="POST">
+                                        <input type="submit" value="RSVP">
+                                        <input type="hidden" value=@wedding.WeddingId name="Id">
+                                    </form>
+                                }
+                            }
+                    
+                    }</td>
+                </tr>
+            }
+        </table>
+        
+    }
+    <a href="add">Add wedding</a>
+</div>

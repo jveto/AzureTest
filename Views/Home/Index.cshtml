@@ -1,0 +1,61 @@
+﻿@model User
+<div class="container">
+    <div class="leftHalf">
+        <h2>Register</h2>
+        <div class="myForm">
+            <form asp-action="Register" asp-controller="Home">
+                <div class="myInput">
+                    <label asp-for="FirstName"></label>
+                    <input asp-for="FirstName">
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+                <div class="myInput">
+                    <label asp-for="LastName"></label>
+                    <input asp-for="LastName">
+                    <span asp-validation-for="LastName"></span>
+                </div>
+                <div class="myInput">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email">
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="myInput">
+                    <label asp-for="Password"></label>
+                    <input type="password" asp-for="Password">
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div class="myInput">
+                    <label asp-for="PassConf"></label>
+                    <input type="password" asp-for="PassConf">
+                    <span asp-validation-for="PassConf"></span>
+                </div>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <div class="rightHalf">
+        <h2>Login</h2>
+        <div class="myForm">
+            <form action="Login" method="POST">
+                <div class="myInput">
+                    <label for="Email2">Email:</label>
+                    <input type="text" id="Email2" name="Email2">
+                </div>
+                <div class="myInput">
+                    <label for="Pasword2">Password: </label>
+                    <input type="password" id="Password2" name="Password2">
+                </div>
+                
+                <input type="submit" value="Login">
+                @{
+                    if(ViewBag.Login != null){
+                        <p class="error">@ViewBag.Login</p>
+                    }
+                }
+            </form>
+            
+        </div>
+    </div>
+
+
+</div>

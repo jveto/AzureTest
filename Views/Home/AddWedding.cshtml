@@ -1,0 +1,28 @@
+@model Wedding
+<div class="container">
+    <div class="myForm">
+        <form asp-action="Add" asp-controller="Home">
+            <div class="myInput">
+                <label asp-for="WedderOne"></label>
+                <input asp-for="WedderOne">
+                <span asp-validation-for="WedderOne"></span>
+            </div>
+            <div class="myInput">
+                <label asp-for="WedderTwo"></label>
+                <input asp-for="WedderTwo">
+                <span asp-validation-for="WedderTwo"></span>
+            </div>
+            <div class="myInput">
+                <label asp-for="Date"></label>
+                <input type="date" asp-for="Date">
+                <span asp-validation-for="Date"></span>
+            </div>
+            <div class="myInput">
+                <label asp-for="Address"></label>
+                <input asp-for="Address">
+                <span asp-validation-for="Address"></span>
+            </div>
+            <input type="submit" value="Create wedding">
+        </form>
+    </div>
+</div>
